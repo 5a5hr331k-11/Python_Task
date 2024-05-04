@@ -29,3 +29,37 @@ while num<15:
     else:
         print(num)
 
+#Task 5
+List=["Hands","Head","Legs"]
+p=0
+while p < len(List):
+   print(List[p])
+   p+=1
+
+#Task 6
+Sum = 0
+n = 0
+numbers = [3,18,10,26]
+while n < len(numbers):
+    Sum = Sum + numbers[n]
+    n += 1
+    print(Sum)
+
+#Task 7
+Sum = 0
+z = 0
+while z < 100:
+    Sum = Sum + z
+    z += 1
+    print(Sum)
+
+#Task 8
+n = input("enter any number")
+n = int(n)
+f = 1
+while n >= 1:
+    f *= n
+    n -= 1
+    print(f)
+
+
