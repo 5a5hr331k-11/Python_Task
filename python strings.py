@@ -74,3 +74,66 @@ print(name.swapcase())
 String = "the number of offers\n I recieve everyday\n are endless"
 print(String.splitlines())
 
+#Join:
+
+myList = ["stump", "ball", "bat"]
+print("and".join(myList))
+
+#Replace:
+
+myString = "the number of offers I recieve everyday are endless"
+print(myString.replace("offers","gifts"))
+
+#Index:
+
+name = "ocean academy"
+print(name.index("academy"))
+
+#Isalnum:
+
+Demo = "de123"
+print(Demo.isalnum())
+
+#Isalpha:
+
+myDemo = "demo"
+print(myDemo.isalpha())
+
+#Isdecimal:
+
+myNum = "18"
+print(myNum.isdecimal())
+
+#Isdigit:
+
+myNum = "18"
+print(myNum.isdigit())
+
+#Islower:
+
+name = "ocean academy"
+print(name.islower())
+
+#Isnumeric:
+
+myNum = "18"
+print(myNum.isnumeric())
+
+#Partition:
+
+myString = "the number of offers I recieve everyday are endless"
+print(myString.partition("offers"))
+
+#Zfill:
+
+myNum = "18"
+print(myNum.zfill(3))
+
+#f-String:
+
+price = "5"
+sentence = f"the cost of the pen is {price} rupees"
+print(sentence)
+
+
+
