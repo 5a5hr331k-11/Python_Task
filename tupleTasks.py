@@ -71,14 +71,18 @@ else:
     print("No")
 
 #Task 15:
-my_data = (10,20,30,40,50,23)
-Max = max(my_data)
-print(Max)
+myData = (10,20,30,40,50,23)
+convert = list(myData)
+convert.sort()
+myData = tuple(convert)
+print(myData[-1])
 
 #Task 16:
-myData = (-10,-20,-30,-40,-50)
-Min = min(myData)
-print(Min)
+my_Data = (-10,-20,-30,-40,-50)
+convert = list(my_Data)
+convert.sort()
+my_Data = tuple(convert)
+print(my_Data[0])
 
 #Task 17:
 Bool = (True,True,False)
