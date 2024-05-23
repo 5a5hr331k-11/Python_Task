@@ -1,8 +1,8 @@
-# Size of a set:
+#Size of a set:
 My_set = {"Football","Cricket","Basketball","Chess"}
 print(len(My_set))
 
-# Maximum and Minimum of a set:
+#Maximum and Minimum of a set:
 numSet = {12,43,7,45,17}
 convSet = list(numSet)
 convSet.sort()
@@ -27,10 +27,10 @@ print(My_set)
 #Task 5:
 numSet = set(convSet)
 second_set = {7,45,89,60,34}
-for item in numSet:
-    if item in second_set:
-        numSet.remove(item)
-        print(numSet)
+for item in second_set:
+    if item in numSet:
+           numSet.remove(item)
+           print(numSet)
 
 #Task 6:
 DemoSet = {"Youtube","Twitter","Instagram","Mail"}
@@ -50,9 +50,11 @@ print(subSet.issubset(My_set))
 print("Cricket" in consSet)
 
 #Task 10:
-for values in My_set:
-    if values not in DemoSet:
-        print("there are no common elements")
+if My_set.isdisjoint(DemoSet):
+    print("there are no common elements")
+else:
+    print("there are common elements")
+
         
 
 
