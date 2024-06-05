@@ -16,7 +16,7 @@ def MaxElement(Maximum):
     return Largest
 print(MaxElement(myList))
 
-# Task - 3
+# Task - 3:
 def MinElement(Minimum):
     Smallest = Minimum[0]
     for Min in Minimum[1:]:
@@ -24,4 +24,12 @@ def MinElement(Minimum):
             Smallest = Min
     return Smallest
 print(MinElement(myList))
-        
+
+#Task - 4:
+def CountNum(myList):
+    length = 0
+    for count in myList:
+        length += 1
+    return length
+print(CountNum(myList))
+
