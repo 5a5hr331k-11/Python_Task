@@ -33,3 +33,12 @@ def CountNum(myList):
     return length
 print(CountNum(myList))
 
+# Task - 6:
+noneList = []
+def check_emp(Empty):
+    if len(noneList) == 0:
+        print("The list is empty")
+    else:
+        print("the list is full")
+check_emp(noneList)
+
