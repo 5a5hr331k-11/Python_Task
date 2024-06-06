@@ -25,6 +25,11 @@ def MinElement(Minimum):
     return Smallest
 print(MinElement(myList))
 
+# Task - 5:
+def reverseList(Rev):
+    print(Rev[::-1])
+reverseList(myList)
+
 #Task - 4:
 def CountNum(myList):
     length = 0
@@ -41,4 +46,25 @@ def check_emp(Empty):
     else:
         print("the list is full")
 check_emp(noneList)
+
+# Task - 7:
+dupList = [12,56,73,5,4]
+def check_duplicate(Remove):
+    for num in myList:
+        if num in dupList:
+            dupList.remove(num)
+            print(dupList)
+check_duplicate(myList)
+
+# Task - 8:
+eve_List = []
+def remove_even(x):
+    for eve in myList:
+        if eve % 2 == 0:
+            eve_List.append(eve)
+            print(eve_List)
+remove_even(myList)
+
+            
+        
 
