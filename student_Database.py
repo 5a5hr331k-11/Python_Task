@@ -32,6 +32,24 @@ def insert_multiple(usersData):
 
 insert_multiple(students)
 
+#getting all data from a collection:
+
+def get_all_student():
+    all_student = studentCol.find()
+    for all_studentdata in all_student:
+        print(all_studentdata)
+
+get_all_student()
+
+#getting specific data:
+
+def get_specific_student(id):
+    studentID = ObjectId(id)
+    myDocument = studentCol.find_one({"_id":studentID})
+    print(myDocument)
+
+get_specific_student("66c540033b4b0e936c81767d")
+
 
 
     
