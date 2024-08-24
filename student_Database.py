@@ -50,6 +50,44 @@ def get_specific_student(id):
 
 get_specific_student("66c540033b4b0e936c81767d")
 
+#updating data:
+
+def updateData(query, newData):
+    updateRecord = studentCol.update_one(query, newData)
+updateData({"name":"Davesh"},{"$set":{"mark":439}})
+
+#$limit:
+
+pipeline = [{"$limit":3}]
+
+def getDataLimit(count_limit):
+    limitedData = studentCol.aggregate(count_limit)
+    for document in limitedData:
+        print(document)
+getDataLimit(pipeline)
+
+#$sort:
+
+pipeline = [{"$sort":{"mark":1}}]
+
+def sortData(ascending):
+    sorting = studentCol.aggregate(ascending)
+    for document in sorting:
+        print(document)
+sortData(pipeline)
+
+#Queries:
+
+query = {"mark" : {"$gt":450}}
+
+def getData(queryData):
+    result = studentCol.find(queryData)
+    for doc in result:
+        print(doc)
+getData(query)
+
+
+
 
 
     
